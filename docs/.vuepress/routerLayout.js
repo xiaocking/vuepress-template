@@ -13,7 +13,11 @@ function getMdFile(dir, arr) {
       // 是md文件
       let fileName = item.split(".")[0];
       if (fileName === "README") {
-        arr.unshift(filePath + "/");
+        if (filePath == "/guide") {
+          arr.unshift(filePath + "/");
+        } else {
+          arr.push(filePath + "/");
+        }
       } else {
         arr.push(filePath + "/" + fileName);
       }
