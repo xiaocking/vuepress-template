@@ -1,5 +1,4 @@
 const guidePageList = require('../.vuepress/routerLayout')
-console.log(guidePageList)
 module.exports = {
   title: 'xiaoc的博客',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
@@ -16,7 +15,7 @@ module.exports = {
     sidebarDepth: 2,
     sidebar: [
       {
-        title: 'Guide',
+        title: '文档',
         collapsable: false,
         // children: [
         //   '/guide/',
@@ -26,5 +25,5 @@ module.exports = {
       }
     ]
   },
-  theme: 'vuepress-theme-reco'
+  theme: 'vuepress-theme-reco' // 配置主题
 };
