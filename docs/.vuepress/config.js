@@ -15,6 +15,11 @@ module.exports = {
     sidebarDepth: 2,
     sidebar: [
       {
+        title: '首页',
+        collapsable: false,
+        children: ["/"]
+      },
+      {
         title: '文档',
         collapsable: false,
         // children: [
